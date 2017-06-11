@@ -1,0 +1,824 @@
+
+/*共用样式*/
+.display-none{
+    display: none!important;
+}
+.display-block{
+    display: block!important;
+}
+.centrality{
+    padding-top: 180px;
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    -webkit-transform-origin:center;
+    -moz-transform-origin:center;
+    -ms-transform-origin:center;
+    -o-transform-origin:center;
+    transform-origin:center;
+}
+.hint-module{
+    position: fixed;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    top: -200px;
+    width: 400px;
+    height: 100px;
+    left: 50%;
+    background-color: #fff;
+    padding: 30px 30px 30px 100px;
+    /*text-align: center;*/
+    font-size: 30px;
+    color: #666;
+    /*border-radius: 8px;*/
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    box-shadow: 2px 4px 3px 0 rgba(118,118,118,.5);
+}
+.icon{
+    display: inline-block; vertical-align: middle; background-size: contain;  background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.remove{
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 70px; height: 70px; background-image: url(../img/close.png);
+}
+.icon-robot{
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+    width: 100px; height: 100px; background-image: url(../img/robot.png);
+}
+.icon-loge{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 220px; height: 80px; background-image: url(../img/logo.png);
+}
+
+/**************************************************** 单样式 ******************************************************/
+body{
+    background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;
+     background-image: url(../img/bg.jpg);
+}
+.left-select{
+    width: 200px;
+    padding: 10px;
+    float: left;
+}
+.left-select .title-jump>span{
+    text-align: center;
+    font-size: 18px;
+    line-height: 38px;
+    display: inline-block;
+    width: 65px;
+    position: relative;
+    z-index: 10;
+    /*box-shadow: 2px 4px 3px 0 rgba(118,118,118,.5);*/
+}
+.left-select .title-jump>span{
+    background-color: #fff;
+    font-weight: 700;
+    color: #999;
+    cursor:pointer
+}
+.left-select .title-jump>span.activate{
+    background-color: #fff;
+}
+
+.left-select .title-jump>span:first-child+span{
+    margin-left: 50px;
+}
+.left-select .title-jump>span:first-child:before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 38px solid #fff;
+    border-right: 40px solid transparent;
+    top: 0;
+    right: -40px;
+}
+.left-select .title-jump>span:first-child+span:before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 38px solid #fff;
+    border-left: 40px solid transparent;
+    top: 0;
+    left: -40px;
+}
+.left-select .title-jump>span.activate{
+    color: #28B9D5;
+}
+
+
+.middle-main{
+    margin-left: 20px;
+    height: 565px;
+    padding: 10px;
+    width: 660px;
+    float: left;
+}
+.middle-main .templet{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 4px 2px 0 rgba(118,118,118,.5);
+}
+.header{
+    height: 584px;
+    width: 1000px;
+    background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;
+    background-image: url(../img/box.jpg);
+    /*border-radius: 10px;*/
+    position: absolute;
+    box-shadow: 3px 5px 3px 0 rgba(118,118,118,.5);
+    z-index: 100;
+}
+.header .title-hint{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    line-height: 40px;
+}
+.topic{
+    width: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    color: #333;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.header-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+.header-ask{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+ul.select{
+    margin-top: 20px;
+    overflow: hidden;
+}
+ul.select>li{
+    text-align: center;
+    float: left;
+    width: 150px;
+    /*margin-left: 15px;*/
+    font-size: 26px;
+    line-height: 60px;
+    /*box-shadow: 0 2px 2px 0 rgba(118,118,118,.5);*/
+    background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;
+    background-image: url(../img/border-img.png);
+    cursor:pointer
+
+}
+
+
+.add-img-pack{
+    padding: 20px 100px;
+}
+.add{
+    background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;
+    width: 120px;height: 120px; background-image: url(../img/addImg.png);
+}
+.add-img{
+    overflow: hidden;
+}
+.add-img>img,.add-img .add{
+    float: left;
+    height: 120px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.img-pack{
+    display: none;
+    height: 500px;
+    overflow-y: auto;
+    box-shadow: 3px 5px 3px 0 rgba(118,118,118,.5);
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 7px;
+
+}
+.img-pack::-webkit-scrollbar
+{
+    width: 2px;
+    height: 10px;
+    background-color: #F5F5F5;
+}
+.img-pack::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.img-pack.activate{
+    display: block;
+}
+
+.img-pack img{
+    width: 100%;
+    display: block;
+    box-shadow: 2px 4px 3px 0 rgba(118,118,118,.5);
+}
+.img-pack img:not(:first-child){
+    margin-top: 10px;
+}
+
+.add input[name=files]{
+    opacity:0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.middle-main .to-show{
+    position: absolute;
+    box-shadow: 3px 5px 4px 0 rgba(118,118,118,.5);
+  /*  margin-left: 30px;
+    position: relative;
+    height: 420px;
+    background-color: #fff;*/
+}
+.download-p{
+    text-align: right;
+    margin-top: 20px;
+}
+.download{
+    margin-left: 15px;
+    cursor:pointer;
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #7BBFEA;
+    text-align:center;
+    /*border-radius: 8px;*/
+    box-shadow: 0 2px 2px 0 rgba(118,118,118,.5);
+}
+
+.classics-pack [data-sel]:before{
+    content: 'please a picture';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    color: #333;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: #74DDF1;
+}
+
+.classics-pack>div{
+    position: relative;
+}
+.classics-pack img{
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    display: none;
+    position: absolute;
+}
+.modal-box{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    min-width: 960px;
+    min-height: 960px;
+}
+.modal-box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #000000;
+}
+.modal-box .modal-pack{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) ;
+    -moz-transform: translate(-50%, -50%) ;
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 200;
+
+
+}
+canvas{
+    -webkit-transform: scale(1.2);
+    -moz-transform:  scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transform-origin: center center;transform-origin: center center;
+}
+.download-button{
+    position: absolute;
+    width: 100%;
+    bottom: -36px;
+    text-align: right;
+}
+.download-button>i{
+    display: inline-block;
+    /*border-radius: 8px;*/
+    padding: 5px;
+    min-width: 80px;
+    background-color: #7BBFEA;
+    margin-right: 10px;
+    text-align: center;
+    cursor:pointer
+}
+/*模板整体共用*/
+.to-show{
+    display: none ;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.to-show.activation{display: block}
+.classics-pack>div{
+    overflow: hidden;
+    border: 1px dashed #ccc;
+}
+.right-handle{
+    float: left;
+    width: 120px;
+    padding: 10px;
+}
+.right-handle>p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 38px;
+    background-color: #fff;
+    color: #28B9D5;
+    font-weight: 700;
+    box-shadow: 2px 3px 3px 0 rgba(118,118,118,.5);
+    cursor:pointer
+}
+.right-handle>p:not(:first-child){
+    margin-top: 10px;
+}
+
+
+/*templet 模板公共*/
+.classics-pack{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 30;
+}
+img.img-frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+}
+.trigger-select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    z-index: 50;
+}
+/******************************************* templet-1-2 模板 ******************************************/
+
+.templet-1-2{
+    width: 500px;
+    height: 350px;
+}
+.templet-1-2 .show-classics-1{
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    width: 175px;
+    height: 130px;
+}
+.templet-1-2 .show-classics-2{
+    position: absolute;
+    top: 155px;
+    left: 327px;
+    width: 114px;
+    height: 149px;
+}
+
+.templet-1-2 .classics-pack{
+    width: 500px;
+    height: 350px;
+}
+.templet-1-2 img.img-frame{
+    height: 350px;
+    width: 500px;
+}
+
+/******************************************* templet-1-3 模板 ******************************************/
+.templet-1-3{
+    width: 500px;
+    height: 350px;
+}
+.templet-1-3 .classics-pack{
+    width: 500px;
+    height: 350px;
+}
+.templet-1-3 img.img-frame{
+    height: 350px;
+    width: 500px;
+}
+.templet-1-3 .show-classics-1{
+    position: absolute;
+    top: 86px;
+    left: 50px;
+    width: 124px;
+    height: 180px;
+}
+.templet-1-3 .show-classics-2{
+    position: absolute;
+    top: 20px;
+    left: 222px;
+    width: 164px;
+    height: 152px;
+}
+.templet-1-3 .show-classics-3{
+    position: absolute;
+    top: 184px;
+    left: 310px;
+    width: 170px;
+    height: 152px;
+}
+/******************************************* templet-1-4 模板 ******************************************/
+
+.templet-1-4{
+    width: 400px;
+    height: 400px;
+}
+.templet-1-4 .show-classics-1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 178px;
+    height: 178px;
+}
+.templet-1-4 .show-classics-2{
+    position: absolute;
+    top: 20px;
+    left: 204px;
+    width: 178px;
+    height: 178px;
+}
+.templet-1-4 .show-classics-3{
+    position: absolute;
+    top: 202px;
+    left: 204px;
+    width: 178px;
+    height: 178px;
+
+}
+.templet-1-4 .show-classics-4{
+    position: absolute;
+    top: 202px;
+    left: 20px;
+    width: 178px;
+    height: 178px;
+
+}
+
+.templet-1-4 .classics-pack{
+    width: 400px;
+    height: 400px;
+}
+.templet-1-4 img.img-frame{
+    width: 402px;
+    height: 402px;
+}
+/******************************************* templet-0-1 模板 ******************************************/
+
+.templet-0-1{
+    height: 401px;
+    width: 488px;
+}
+.templet-0-1 .classics-pack{
+    height: 401px;
+    width: 488px;
+}
+.templet-0-1 img.img-frame{
+    height: 401px;
+    width: 488px;
+}
+.templet-0-1 .show-classics-1{
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    width: 410px;
+    height: 348px;
+}
+/******************************************* templet-0-2 模板 ******************************************/
+
+.templet-0-2{
+    height: 500px;
+    width: 375px;
+}
+.templet-0-2 .classics-pack{
+    height: 500px;
+    width: 375px;
+}
+.templet-0-2 img.img-frame{
+    height: 500px;
+    width: 375px;
+}
+.templet-0-2 .show-classics-1{
+    position: absolute;
+    top: 86px;
+    left: 64px;
+    width: 275px;
+    height: 344px;
+}
+
+/******************************************* templet-0-3 模板 ******************************************/
+
+.templet-0-3{
+    height: 516px;
+    width: 365px;
+}
+.templet-0-3 .classics-pack{
+    height: 516px;
+    width: 365px;
+}
+.templet-0-3 img.img-frame{
+    height: 516px;
+    width: 365px;
+}
+.templet-0-3 .show-classics-1{
+    position: absolute;
+    top: 10px;
+    left: 36px;
+    width: 295px;
+    height: 446px;
+}
+
+/******************************************* templet-2-2 模板 ******************************************/
+
+.templet-2-2{
+    height: 388px;
+    width: 560px;
+}
+.templet-2-2 .classics-pack{
+    height: 388px;
+    width: 560px;
+}
+.templet-2-2 img.img-frame{
+    height: 388px;
+    width: 560px;
+}
+.templet-2-2 .show-classics-1{
+    position: absolute;
+    top: 13px;
+    left: 22px;
+    width: 255px;
+    height: 365px;
+}
+.templet-2-2 .show-classics-2{
+    position: absolute;
+    top: 13px;
+    left: 280px;
+    width: 255px;
+    height: 365px;
+}
+
+/******************************************* templet-2-3 模板 ******************************************/
+
+.templet-2-3{
+    height: 373px;
+    width: 570px;
+}
+.templet-2-3 .classics-pack{
+    height: 373px;
+    width: 570px;
+}
+.templet-2-3 img.img-frame{
+    height: 373px;
+    width: 570px;
+}
+.templet-2-3 .show-classics-1{
+    position: absolute;
+    top: 86px;
+    left: 36px;
+    width: 180px;
+    height: 265px;
+}
+.templet-2-3 .show-classics-2{
+    position: absolute;
+    top: 33px;
+    left: 220px;
+    width: 180px;
+    height: 326px;
+}
+.templet-2-3 .show-classics-3{
+    position: absolute;
+    top: 35px;
+    left: 404px;
+    width: 122px;
+    height: 282px;
+}
+
+/******************************************* templet-2-4 模板 ******************************************/
+
+.templet-2-4{
+    height: 368px;
+    width: 600px;
+}
+.templet-2-4 .classics-pack{
+    height: 368px;
+    width: 600px;
+}
+.templet-2-4 img.img-frame{
+    height: 368px;
+    width: 600px;
+}
+.templet-2-4 .show-classics-1{
+    position: absolute;
+    top: 24px;
+    left: 268px;
+    width: 158px;
+    height: 163px;
+}
+.templet-2-4 .show-classics-2{
+    position: absolute;
+    top: 24px;
+    left: 428px;
+    width: 158px;
+    height: 163px;
+}
+.templet-2-4 .show-classics-3{
+    position: absolute;
+    top: 189px;
+    left: 268px;
+    width: 158px;
+    height: 163px;
+}
+.templet-2-4 .show-classics-4{
+    position: absolute;
+    top: 189px;
+    left: 428px;
+    width: 158px;
+    height: 163px;
+}
+/******************************************* templet-3-2 模板 ******************************************/
+
+.templet-3-2{
+    height: 372px;
+    width: 560px;
+}
+.templet-3-2 .classics-pack{
+    height: 372px;
+    width: 560px;
+}
+.templet-3-2 img.img-frame{
+    height: 372px;
+    width: 560px;
+}
+.templet-3-2 .show-classics-1{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    width: 276px;
+    height: 300px;
+}
+.templet-3-2 .show-classics-2{
+    position: absolute;
+    top: 220px;
+    left: 276px;
+    width: 140px;
+    height: 128px;
+}
+/******************************************* templet-3-3 模板 ******************************************/
+
+.templet-3-3{
+    height: 346px;
+    width: 560px;
+}
+.templet-3-3 .classics-pack{
+    height: 346px;
+    width: 560px;
+}
+.templet-3-3 img.img-frame{
+    height: 346px;
+    width: 560px;
+}
+.templet-3-3 .show-classics-1{
+    position: absolute;
+    top: 55px;
+    left: 90px;
+    width: 317px;
+    height: 242px;
+}
+.templet-3-3 .show-classics-2{
+    position: absolute;
+    top: 35px;
+    left: 415px;
+    width: 70px;
+    height: 114px;
+}
+.templet-3-3 .show-classics-3{
+    position: absolute;
+    top: 147px;
+    left: 415px;
+    width: 143px;
+    height: 138px;
+}
+
+/******************************************* templet-3-4 模板 ******************************************/
+
+.templet-3-4{
+    height: 490px;
+    width: 490px;
+}
+.templet-3-4 .classics-pack{
+    height: 490px;
+    width: 490px;
+}
+.templet-3-4 img.img-frame{
+    height: 490px;
+    width: 490px;
+}
+.templet-3-4 .show-classics-1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 243px;
+    height: 243px;
+}
+.templet-3-4 .show-classics-2{
+    position: absolute;
+    top: 0px;
+    left: 245px;
+    width: 243px;
+    height: 243px;
+}
+.templet-3-4 .show-classics-3{
+    position: absolute;
+    top: 245px;
+    left: 0px;
+    width: 243px;
+    height: 243px;
+}
+.templet-3-4 .show-classics-4{
+    position: absolute;
+    top: 245px;
+    left: 245px;
+    width: 243px;
+    height: 243px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

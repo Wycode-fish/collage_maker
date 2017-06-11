@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collage Maker</title>
+    <link rel="stylesheet" href="canvas/myChange/css/common.css">
+    <link rel="stylesheet" href="canvas/myChange/css/custom.css">
+
+</head>
+<body>
+
+<div class="centrality">
+    <i class="icon icon-loge"></i>
+
+    <div class="hint-module">
+        <p class="hint-text">Please choose a photo!</p>
+        <i class="icon icon-robot"></i>
+    </div>
+    <div class="header" data-moment="1">
+        <p class="title-hint">I'm matching a model for you...</p>
+        <div class="topic">
+            <p class="header-title" data-subject="start">How many pictures do you need to collage?</p>
+            <ul class="select">
+                <li data-select="start-2">two</li>
+                <li data-select="start-3">three</li>
+                <li data-select="start-4">four</li>
+            </ul>
+        </div>
+        <i class="icon icon-robot"></i>
+    </div>
+    <div class="header display-none"  data-mould="select">
+        <p class="title-hint">Please choose a picture&nbsp;or&nbsp;click "+" to upload</p>
+        <div class="add-img-pack">
+            <div id="imgPack" class="add-img">
+                <div class="add"><input type="file" name="files" accept="image/jpeg,image/png,image/gif" onChange="changImg(event)"></div>
+            </div>
+        </div>
+        <i class="icon icon-robot"></i>
+        <i class="icon remove" data-remove="select"></i>
+    </div>
+    <div class="display-block" data-moment="2">
+        <div class="left-select">
+            <div data-templet="pack">
+                <p class="title-jump"><span class="activate" data-jump="1">classic</span><span data-jump="2">art</span></p>
+                <div id="mouldPack" class="img-pack activate" data-enter="1">
+                    <img src="canvas/myChange/img/bg-img/1-2.png" alt="" data-need="templet-1-2">
+                    <img src="canvas/myChange/img/bg-img/1-3.png" alt="" data-need="templet-1-3">
+                    <img src="canvas/myChange/img/bg-img/1-4.png" alt="" data-need="templet-1-4">
+                    <img src="canvas/myChange/img/bg-img/0-1.png" alt="" data-need="templet-0-1">
+                    <img src="canvas/myChange/img/bg-img/0-2.png" alt="" data-need="templet-0-2">
+                    <img src="canvas/myChange/img/bg-img/0-3.png" alt="" data-need="templet-0-3">
+                </div>
+                <div id="" class="img-pack" data-enter="2">
+                    <img src="canvas/myChange/img/bg-img/2-2.png" alt="" data-need="templet-2-2">
+                    <img src="canvas/myChange/img/bg-img/2-3.png" alt="" data-need="templet-2-3">
+                    <img src="canvas/myChange/img/bg-img/2-4.png" alt="" data-need="templet-2-4">
+                    <img src="canvas/myChange/img/bg-img/3-2.png" alt="" data-need="templet-3-2">
+                    <img src="canvas/myChange/img/bg-img/3-3.png" alt="" data-need="templet-3-3">
+                    <img src="canvas/myChange/img/bg-img/3-4.png" alt="" data-need="templet-3-4">
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-main">
+            <div class="templet">
+                <div class="to-show templet-1-2" data-tem="templet-1-2">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/1-2.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-1-3" data-tem="templet-1-3">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                        <div class="show-classics-3" data-sel="3"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/1-3.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                        <div class="show-classics-3" data-sel="3"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-1-4" data-tem="templet-1-4">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                        <div class="show-classics-3" data-sel="3"><img src="" alt=""></div>
+                        <div class="show-classics-4" data-sel="4"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/1-4.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                        <div class="show-classics-3" data-sel="3"></div>
+                        <div class="show-classics-4" data-sel="4"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-0-1" data-tem="templet-0-1">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/0-1.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-0-2" data-tem="templet-0-2">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/0-2.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-0-3" data-tem="templet-0-3">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/0-3.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                    </div>
+                </div>
+
+                <div class="to-show templet-2-2" data-tem="templet-2-2">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/2-2.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-2-3" data-tem="templet-2-3">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                        <div class="show-classics-3" data-sel="3"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/2-3.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                        <div class="show-classics-3" data-sel="3"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-2-4" data-tem="templet-2-4">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                        <div class="show-classics-3" data-sel="3"><img src="" alt=""></div>
+                        <div class="show-classics-4" data-sel="4"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/2-4.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                        <div class="show-classics-3" data-sel="3"></div>
+                        <div class="show-classics-4" data-sel="4"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-3-2" data-tem="templet-3-2">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/3-2.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-3-3" data-tem="templet-3-3">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                        <div class="show-classics-3" data-sel="3"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/3-3.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                        <div class="show-classics-3" data-sel="3"></div>
+                    </div>
+                </div>
+                <div class="to-show templet-3-4" data-tem="templet-3-4">
+                    <div class="classics-pack" data-pack="target">
+                        <div class="show-classics-1" data-sel="1"><img src="" alt=""></div>
+                        <div class="show-classics-2" data-sel="2"><img src="" alt=""></div>
+                        <div class="show-classics-3" data-sel="3"><img src="" alt=""></div>
+                        <div class="show-classics-4" data-sel="4"><img src="" alt=""></div>
+                    </div>
+                    <img src="canvas/myChange/img/bg-img/3-4.png" class="img-frame">
+                    <div class="trigger-select" data-pack="trigger">
+                        <div class="show-classics-1" data-sel="1"></div>
+                        <div class="show-classics-2" data-sel="2"></div>
+                        <div class="show-classics-3" data-sel="3"></div>
+                        <div class="show-classics-4" data-sel="4"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="download-p display-none">
+                <span class="download" data-click="generate-image">preview</span>
+                <span class="download" data-click="once-download">download</span>
+            </p>
+        </div>
+        <div class="right-handle">
+            <p class="" data-click="reset-img">start agin</p>
+            <p class="" data-click="once-download">download</p>
+        </div>
+    </div>
+    <div class="modal-box" data-id="canvas">
+        <div class="modal-pack">
+            <canvas id="canvas" width="" height="">A Drawing of something</canvas>
+            <p class="download-button"><i class="" data-click="download">download</i><i class="" data-click="close-modal">exit</i></p>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script src="canvas/myChange/js/jquery/jquery-1.11.0.min.js"></script>
+<script src="canvas/myChange/js/photoFrame.js"></script>
+</body>
+</html>
